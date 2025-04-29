@@ -1,7 +1,11 @@
 import numpy as np
 
 j = int(input("Enter a Number (0-9): "))
-step_function = lambda x: 1 if x >= 0 else 0
+def step_function(x):
+    if x >= 0:
+        return 1
+    else:
+        return 0
 
 training_data = [
     {'input': [1, 1, 0, 0, 0, 0], 'label': 1},
